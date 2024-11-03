@@ -12,31 +12,67 @@
   <button class="tablinks" onclick="openUnit(event, 'Unit10')">Unit 10</button>
 </div>
 
-<button onclick="printContent()" style="margin-top: 10px;">Print Current Section</button>
-
 <!-- Unit Content Sections -->
 <div id="Unit1" class="tabcontent">
   <h2>Unit 1</h2>
-  <p><strong>Navigating the Generative AI Revolution:</strong> A Global Perspective...</p>
-  <p>Since late 2022, generative artificial intelligence has surged...</p>
-  <!-- Full content of Unit 1 -->
+  <p><strong>Navigating the Generative AI Revolution:</strong> A Global Perspective</p>
+  <p>Since late 2022, generative artificial intelligence has surged into the forefront of technological innovation, dramatically impacting industries across the globe...</p>
+  <!-- Include the full content for Unit 1 here -->
 </div>
 
 <div id="Unit2" class="tabcontent">
   <h2>Unit 2</h2>
-  <p><strong>Literature Review Outline:</strong> Usage of Large Language Models (LLMs) in Robotics...</p>
-  <p>Introduction Overview of LLMs in robotics, particularly for control systems...</p>
-  <!-- Full content of Unit 2 -->
+  <p><strong>Literature Review Outline:</strong> Usage of Large Language Models (LLMs) in Robotics</p>
+  <p>Introduction Overview of LLMs in robotics, particularly for control systems, significance of models like GPT-3 and GPT-4 in robotics...</p>
+  <!-- Include the full content for Unit 2 here -->
 </div>
 
 <div id="Unit3" class="tabcontent">
   <h2>Unit 3</h2>
-  <p><strong>Selecting Appropriate Research Methods, Data Collection, and Required Skills for Evaluating Large Language Models in Robotics</strong>...</p>
-  <p>The project focuses on evaluating the feasibility and accuracy of Large Language Models (LLMs)...</p>
-  <!-- Full content of Unit 3 -->
+  <p><strong>Selecting Appropriate Research Methods, Data Collection, and Required Skills for Evaluating Large Language Models in Robotics</strong></p>
+  <p>The project focuses on evaluating the feasibility and accuracy of Large Language Models (LLMs) in performing kinematic calculations for humanoid robots...</p>
+  <!-- Include the full content for Unit 3 here -->
 </div>
 
-<!-- Continue adding div sections for Units 4-10 with full content as provided -->
+<div id="Unit4" class="tabcontent">
+  <h2>Unit 4</h2>
+  <p><strong>Detailed Outline for Literature Review:</strong> Usage of Large Language Models (LLMs) in Robotics</p>
+  <p>Introduction to LLM advancements and their transformative role across technology sectors, particularly robotics...</p>
+  <!-- Include the full content for Unit 4 here -->
+</div>
+
+<div id="Unit5" class="tabcontent">
+  <h2>Unit 5</h2>
+  <p><strong>Case Study:</strong> Inappropriate Use of Surveys</p>
+  <p>The 2018 Cambridge Analytica scandal highlighted the dangers of using seemingly harmless surveys on social media to harvest personal data for alternative purposes, particularly political and financial gain...</p>
+  <!-- Include the full content for Unit 5 here -->
+</div>
+
+<div id="Unit6" class="tabcontent">
+  <h2>Unit 6</h2>
+  <p>6.1-8.1</p>
+  <p><strong>The results for Diet B are as follows:</strong> Sample Size: 50, Sample Mean Weight Loss: 3.710 kg, Sample Standard Deviation: 2.769 kg...</p>
+  <!-- Include the full content for Unit 6 here -->
+</div>
+
+<div id="Unit7" class="tabcontent">
+  <h2>Unit 7</h2>
+  <p><strong>Literature review:</strong> Usage of Large Language Models (LLMs) in Robotics</p>
+  <p>In the literature review on the use of Large Language Models (LLMs) in robotics, I examined various aspects of how LLMs like GPT-3 and GPT-4 are applied to control robots...</p>
+  <!-- Include the full content for Unit 7 here -->
+</div>
+
+<div id="Unit9" class="tabcontent">
+  <h2>Unit 9</h2>
+  <p>9.1 Interpretation: Area 1: The least preferred brand is Brand A, followed by Brand B, with the majority of respondents preferring other brands...</p>
+  <!-- Include the full content for Unit 9 here -->
+</div>
+
+<div id="Unit10" class="tabcontent">
+  <h2>Unit 10</h2>
+  <p>In developing this presentation on evaluating Large Language Models (LLMs) for robotics, I delved deeply into both the technical potential and limitations of LLMs in robotics applications...</p>
+  <!-- Include the full content for Unit 10 here -->
+</div>
 
 <script>
 function openUnit(evt, unitName) {
@@ -55,14 +91,6 @@ function openUnit(evt, unitName) {
   // Show the selected tab and add "active" class to the button
   document.getElementById(unitName).style.display = "block";
   evt.currentTarget.className += " active";
-}
-
-function printContent() {
-  var activeContent = document.querySelector('.tabcontent[style*="display: block"]');
-  var newWin = window.open("");
-  newWin.document.write(activeContent.outerHTML);
-  newWin.print();
-  newWin.close();
 }
 
 // Show the first tab by default
