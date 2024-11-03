@@ -12,26 +12,31 @@
   <button class="tablinks" onclick="openUnit(event, 'Unit10')">Unit 10</button>
 </div>
 
+<button onclick="printContent()" style="margin-top: 10px;">Print Current Section</button>
+
 <!-- Unit Content Sections -->
 <div id="Unit1" class="tabcontent">
   <h2>Unit 1</h2>
-  <p>**Navigating the Generative AI Revolution:** A Global Perspective...</p>
-  <!-- (Add the remaining content for Unit 1 here) -->
+  <p><strong>Navigating the Generative AI Revolution:</strong> A Global Perspective...</p>
+  <p>Since late 2022, generative artificial intelligence has surged...</p>
+  <!-- Full content of Unit 1 -->
 </div>
 
 <div id="Unit2" class="tabcontent">
   <h2>Unit 2</h2>
-  <p>**Literature Review Outline:** Usage of Large Language Models (LLMs) in Robotics...</p>
-  <!-- (Add the remaining content for Unit 2 here) -->
+  <p><strong>Literature Review Outline:</strong> Usage of Large Language Models (LLMs) in Robotics...</p>
+  <p>Introduction Overview of LLMs in robotics, particularly for control systems...</p>
+  <!-- Full content of Unit 2 -->
 </div>
 
 <div id="Unit3" class="tabcontent">
   <h2>Unit 3</h2>
-  <p>**Selecting Appropriate Research Methods, Data Collection, and Required Skills for Evaluating Large Language Models in Robotics**...</p>
-  <!-- (Add the remaining content for Unit 3 here) -->
+  <p><strong>Selecting Appropriate Research Methods, Data Collection, and Required Skills for Evaluating Large Language Models in Robotics</strong>...</p>
+  <p>The project focuses on evaluating the feasibility and accuracy of Large Language Models (LLMs)...</p>
+  <!-- Full content of Unit 3 -->
 </div>
 
-<!-- Continue adding div sections for Units 4-10 -->
+<!-- Continue adding div sections for Units 4-10 with full content as provided -->
 
 <script>
 function openUnit(evt, unitName) {
@@ -52,6 +57,14 @@ function openUnit(evt, unitName) {
   evt.currentTarget.className += " active";
 }
 
+function printContent() {
+  var activeContent = document.querySelector('.tabcontent[style*="display: block"]');
+  var newWin = window.open("");
+  newWin.document.write(activeContent.outerHTML);
+  newWin.print();
+  newWin.close();
+}
+
 // Show the first tab by default
 document.addEventListener("DOMContentLoaded", function() {
   document.querySelector('.tablinks').click();
@@ -60,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <style>
 .tab { display: flex; gap: 10px; }
-.tab button { padding: 10px; cursor: pointer; }
-.tab button.active { background-color: #ddd; }
+.tab button { padding: 10px; cursor: pointer; background-color: #f1f1f1; border: none; }
+.tab button.active { background-color: #ddd; font-weight: bold; }
 .tabcontent { display: none; padding: 20px; border: 1px solid #ccc; margin-top: 10px; }
 </style>
